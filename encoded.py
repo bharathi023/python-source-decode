@@ -3,6 +3,7 @@ import string
 
 def xor(x):
     return ''.join(chr(ord(i)^10) for i in x)
+#by looking at the code we can understand that we should give a string such a way that it matches to the correspondig value in your_code.
 
 
 def shift(x):
@@ -29,7 +30,7 @@ if __name__=="__main__":
 
     arr = raw_input()
 
- 
+    #to decrypt the hex value we need to do the proccess in reverse manner.
     your_code = encode(xor(shift(arr)))
     if your_code == "667b6c7d63677f3c733c7f323c3c7b333e7b3c3c7f3e7b333e3232393c3d3268":
         print "Yeah!....You are a Genius"
