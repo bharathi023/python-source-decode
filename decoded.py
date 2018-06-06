@@ -28,8 +28,10 @@ if __name__=="__main__":
     print "Enter what you got after decoding:"
 
     arr = raw_input()
-
-    
+    #give the hex value given in print to get the string by decoding.
+  #to decode it in the revrese manner 1st call the enocde  "shift(xor(encode()))" to decode the hex value and then xor it.
+    #then call the shift as you have done '+3' to encode it change it to '-3' to decode it.
+  
     your_code = shift(xor(encode(arr)))
     print (your_code)
     
